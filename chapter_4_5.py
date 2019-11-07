@@ -1,0 +1,29 @@
+# -*- coding: utf-8 -*-
+class Stack:
+    def __init__(self):
+        self.items = []
+
+    def isEmpty(self):
+        return self.items == []
+
+    def push(self, value):
+        self.items.insert(0, value)
+
+    def pop(self):
+        return self.items.pop(0)
+
+    def peek(self):
+        return self.items[0]
+
+    def size(self):
+        return self.items.__len__()
+
+
+s = Stack()
+s.push("xu ke")
+s.push("is")
+s.push("a")
+s.push("good")
+s.push("girl")
+print(s.peek())
+print(s.items)
